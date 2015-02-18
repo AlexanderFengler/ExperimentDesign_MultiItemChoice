@@ -2,8 +2,18 @@
 An experiment that lets the participant take decisions over differing amount of items on the screen, which have been rated before. Coded with the help of Psychtoolbox. Ready for eyetracking (Eyelink).
 
 ## What does the experiment do?
-Three main functions *liking_choices()*, *liking_choices_no_eyetracking()*, and *liking_choices_training()* do the following.
+Three main functions:
+```Matlab
+liking_choices() 
+```
+```Matlab
+liking_choices_no_eyetracking()
+```
+```Matlab
+liking_choices_training()
+```
 
+These functions do the following:
 1. Read in set of images (currently from the *pos_food_numbered*, *pos_food_numbered_training* folders)
 2. Show these images as a liking rating task where the subject indicates how much he/she likes the given item (each item is shown two times)
 3. Extract the items that were on average rated above zero
@@ -12,7 +22,7 @@ Three main functions *liking_choices()*, *liking_choices_no_eyetracking()*, and 
 The training function is different only in that it accesses a different set of items and presents less (currently 15 trials).
 
 ## Eyetracking
-The main function *liking_choices()* is set up to work with eyetracking right out of the box. (Eyelink Eyetracker)
+The main function ```liking_choices()``` is set up to work with eyetracking right out of the box. (Eyelink Eyetracker)
 An *.edf* file that indicates the subject, set size and session number is created and send to the host pc at the end of the experiment.
 
 ## To do:
