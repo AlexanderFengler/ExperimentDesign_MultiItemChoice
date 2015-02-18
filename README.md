@@ -14,6 +14,7 @@ liking_choices_training()
 ```
 
 These functions do the following:
+
 1. Read in set of images (currently from the *pos_food_numbered*, *pos_food_numbered_training* folders)
 2. Show these images as a liking rating task where the subject indicates how much he/she likes the given item (each item is shown two times)
 3. Extract the items that were on average rated above zero
